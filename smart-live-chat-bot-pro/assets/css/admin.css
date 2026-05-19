@@ -1,0 +1,92 @@
+#slcbp-admin-chat-container {
+    display: flex;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    height: 600px;
+}
+
+#slcbp-conversation-list {
+    width: 250px;
+    border-right: 1px solid #ccd0d4;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#slcbp-conversation-list h3 {
+    margin-top: 0;
+}
+
+#slcbp-sessions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#slcbp-sessions li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#slcbp-sessions li:hover, #slcbp-sessions li.active {
+    background: #f0f0f1;
+    font-weight: bold;
+}
+
+#slcbp-chat-window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#slcbp-admin-chat-header {
+    padding: 15px;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+#slcbp-admin-chat-body {
+    flex: 1 1 0;
+    min-height: 0;
+    padding: 15px;
+    overflow-y: auto;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.slcbp-msg {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.slcbp-msg.user {
+    background: #e9ecef;
+    color: #333;
+    align-self: flex-start;
+}
+
+.slcbp-msg.bot {
+    background: #007bff;
+    color: #fff;
+    margin-left: auto;
+    text-align: right;
+}
+
+#slcbp-admin-chat-footer {
+    padding: 15px;
+    border-top: 1px solid #ccd0d4;
+    display: flex;
+}
+
+#slcbp-admin-chat-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
